@@ -29,7 +29,7 @@
       margin:0;
       padding:20px;      
     }
-    #grid ol {
+    ol {
       border-right:1px solid gray;
       /* box라 경계가 끝임 */
       width:100px;
@@ -43,11 +43,22 @@
       display:grid;
       grid-template-columns: 150px 1fr;
     }
-    ol{
+    #grid ol{
       padding-left: 33px;
     }
     #article{
       padding-left: 25px;
+    }
+    @media(max-width:800px){
+      #grid{
+        display:block;
+      }
+      ol{
+        border-right:none;
+      }
+      h1{
+        border-bottom:none;
+      }
     }
   </style>
 </head>
